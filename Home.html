@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teama Store</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--font awsome-->
+    <script src="https://kit.fontawesome.com/a4bb5398ea.js" crossorigin="anonymous"></script>
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+        :root {
+            --primary-color: #95847D;
+            --white: #FEFEFE;
+            --border: #2b303218;
+            --eb: 'Cairo', sans-serif;
+        }
+
+        .white {
+            color: var(--white);
+        }
+
+
+        .primary-color {
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            font-family: var(--eb);
+
+        }
+
+        .header-links a {
+            color: var(--white);
+        }
+
+        .btn-group button {
+            color: var(--white);
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .navbar {
+            background-color: var(--white);
+        }
+
+        .nav a:hover {
+            background-color: #FEFEFE;
+            color: #95847D;
+        }
+
+        .nav a.active {
+            background-color: #FEFEFE;
+            color: #95847D;
+        }
+
+        .nav a {
+            color: var(--white);
+        }
+
+        .slider {
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .dropdown,
+        .icon {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #95847D;
+            color: #FEFEFE;
+        }
+
+        .fas {
+            color: #FEFEFE;
+        }
+
+        .icons {
+            position: relative;
+            display: inline-block;
+        }
+
+        .right {
+            left: 86%;
+            top: 24px;
+            float: right;
+            display: inline-flex;
+
+        }
+
+        .middle {
+            float: left;
+            left: 94%;
+            top: 18px;
+        }
+
+        .left {
+            float: right;
+            left: 90%;
+            top: 18px;
+        }
+
+        .imgdiv img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav {
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100%;
+        }
+
+        .nav a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .icons {
+                display: block;
+            }
+
+            .right {
+                left: 84%;
+                top: 24px;
+                float: right;
+                display: inline-flex;
+            }
+
+            .middle {
+                float: left;
+                left: 92%;
+                top: 18px;
+            }
+
+            .left {
+                float: right;
+                left: 88%;
+                top: 18px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .icons {
+                display: block;
+            }
+
+            .right {
+                left: 81%;
+                top: 24px;
+                float: right;
+                display: inline-flex;
+                width: min-content;
+
+            }
+
+            .middle {
+                float: right;
+                left: 91%;
+                top: 18px;
+                display: inline-flex;
+                width: min-content;
+            }
+
+            .left {
+                float: right;
+                width: min-content;
+                left: 85%;
+                top: 18px;
+                display: inline-flex;
+
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .icons {
+                display: block;
+            }
+
+            .right {
+                left: 80%;
+                top: 24px;
+                float: right;
+                display: inline-flex;
+            }
+
+            .middle {
+                float: right;
+                left: 90%;
+                top: 18px;
+                display: inline-flex;
+
+            }
+
+            .left {
+                float: right;
+                width: min-content;
+                left: 84%;
+                top: 18px;
+                display: inline-flex;
+
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .icons {
+                display: block;
+            }
+
+            .right {
+                left: 10%;
+                top: 32px;
+                float: right;
+                display: inline-flex;
+
+            }
+
+            .middle {
+                float: right;
+                left: 88%;
+                top: 27px;
+                display: inline-flex;
+
+
+            }
+
+            .left {
+                float: right;
+                width: min-content;
+                left: 78%;
+                top: 27px;
+                display: inline-flex;
+
+            }
+
+            .imgdiv img {
+                height: auto;
+                width: auto;
+                max-height: 65px;
+                max-width: 200px;
+                vertical-align: middle;
+
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toggle-button {
+                display: flex;
+                left: 2%;
+                top: 32px;
+                float: left;
+            }
+
+            .nav {
+                display: none;
+                width: 100%;
+            }
+
+            .nav {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .nav {
+                text-align: center;
+            }
+
+            .nav a {
+                padding: .5rem 1rem;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-4 col-12 text-right icons">
+                    <p class="my-md-4 header-links">
+                    <div class="right icon">
+                        <a href="#cart.html"><i class="fas fa-shopping-bag fa-lg"></i></a>
+                    </div>
+
+                    <div class="dropdown middle icon">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-globe fa-lg"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item lang" id="en" type="button">English</button>
+                            <button class="dropdown-item lang" id="ar" type="button">العربية</button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown left icon">
+                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-dollar-sign fa-lg"></i>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item"><img src="oman.png" style="width:30px;height:30px;"
+                                    alt="om"> OMR</a>
+                            <a href="#" class="dropdown-item"><img src="saudi-arabia.png"
+                                    style="width:30px;height:30px;" alt="sar"> SAR</a>
+                            <a href="#" class="dropdown-item"><img src="bahrain.png" style="width:30px;height:30px;"
+                                    alt="bh"> BHD</a>
+                            <a href="#" class="dropdown-item"><img src="flag.png" style="width:30px;height:30px;"
+                                    alt="ae"> AED</a>
+                            <a href="#" class="dropdown-item"><img src="qatar.png" style="width:30px;height:30px;"
+                                    alt="qa"> QAR</a>
+                            <a href="#" class="dropdown-item"><img src="kuwait.png" style="width:30px;height:30px;"
+                                    alt="kw"> KWD</a>
+
+                        </div>
+                    </div>
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 text-center imgdiv">
+
+                    <img src="teama.jpeg" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navig">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="home" href="#">HOME</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="collections"
+                    href="Collection.html">COLLECTIONS</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="sales" href="Sales.html">SALES</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="your_account" href="Account.html">ACCOUNT</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pic3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pic1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pic2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+    <script type="text/javascript" src="jquery.min.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        var langKey = new Array();
+        langKey['en'] = new Array();
+        langKey['ar'] = new Array();
+
+        langKey['en']['home'] = 'HOME';
+        langKey['en']['lang'] = 'Language';
+        langKey['en']['collections'] = 'COLLECTIONS';
+        langKey['en']['sales'] = 'SALES';
+        langKey['en']['your_account'] = 'YOUR ACCOUNT';
+        langKey['en']['cart'] = 'Cart';
+        langKey['en']['account'] = 'Create An Account';
+
+        langKey['ar']['home'] = 'الرئيسية';
+        langKey['ar']['lang'] = 'اللغة';
+        langKey['ar']['collections'] = 'الفئات';
+        langKey['ar']['sales'] = 'تنزيلات';
+        langKey['ar']['your_account'] = 'حسابي';
+        langKey['ar']['cart'] = 'حقيبة التسوق';
+        langKey['ar']['account'] = 'سجل الدخول';
+
+        $(document).ready(function () {
+
+            $('.lang').click(function () {
+
+                var lang = $(this).attr('id');
+
+                $('.tr').each(function (i) {
+                    $(this).text(langKey[lang][$(this).attr('key')]);
+                });
+
+            });
+
+        });
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('nav')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+    </script>
+
+</body>
+
+</html>
