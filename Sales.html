@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections</title>
+    <title>Sales</title>
+     <!---page icon--->
+     <link rel="shourtcut icon" href="icon.png">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,127 +15,59 @@
     <script src="https://kit.fontawesome.com/a4bb5398ea.js" crossorigin="anonymous"></script>
 
     <!--custom stylesheet-->
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
-        :root {
-            --primary-color: #95847D;
-            --white: #FEFEFE;
-            --border: #2b303218;
-            --eb:'Cairo', sans-serif;
-        }
-
-        .white {
-            color: var(--white);
-        }
-        .primary-color {
-            color: var(--primary-color);
-        }
-
-        header {
-            background-color: var(--primary-color);
-            font-family: var(--eb);
-          
-        }
-        .header-links a{
-            color: var(--white);
-        }
-        .btn-group button {
-            color: var(--white);
-        }
-        img {
-            width: 200px;
-        }
-
-        .navbar{
-            background-color: var(--white);
-        }
-        
-        .nav a:hover{
-                    background-color:  #FEFEFE;
-                    color:  #95847D;
-                }
-        .nav a.active{
-            background-color:  #FEFEFE;
-            color:  #95847D;
-        }
-        .nav a{
-            color: var(--white);
-        }
-        .slider{
-            width: 500px;
-            margin: auto;
-            padding: 10px ;
-        }
-        .dropdown{
-            position: fixed;
-            top:0;
-            left:0;
-            background-color:  #95847D;
-            color: #FEFEFE;
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" href="Sales.css">
+  
 
 </head>
 <body>
     <header>
 
         <div class="container">
-
             <div class="row">
-                <div class="dropdown">
-                    <button key ="lang"class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Language
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item lang" id= "en" type="button">English</button>
-                      <button class="dropdown-item lang" id="ar" type="button">العربية</button>
-                     
+
+                <div class="col-md-4 col-12 text-right icons">
+                    <p class="my-md-4 header-links">
+                    <div class="right icon">
+                        <a href="#cart.html"><i class="fas fa-shopping-bag fa-lg"></i></a>
                     </div>
-                  </div>
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="btn-group">
 
-                        <button class="btn dropdown-toggle my-md-4 my-2" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"><img src="oman.png"style="width:30px;height:30px;" alt="om">OMR</button>
+                    <div class="dropdown middle icon">
+                        <a class="btn" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-globe fa-lg"></i>
+                        </a>
 
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item"><img src="saudi-arabia.png"style="width:30px;height:30px;" alt="sar">SAR</a>
-                            <a href="#" class="dropdown-item"><img src="bahrain.png"style="width:30px;height:30px;" alt="bh">BHD</a>
-                            <a href="#" class="dropdown-item"><img src="flag.png"style="width:30px;height:30px;" alt="ae">AED</a>
-                            <a href="#" class="dropdown-item"><img src="qatar.png"style="width:30px;height:30px;" alt="qa">QAR</a>
-                            <a href="#" class="dropdown-item"><img src="kuwait.png"style="width:30px;height:30px;" alt="kw">KWD</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item lang" id="en" type="button">English</button>
+                            <button class="dropdown-item lang" id="ar" type="button">العربية</button>
 
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-12 text-center">
-                    
-                    <img src="teama.jpeg" alt="logo">
-                </div>
-                <div class="col-md-4 col-12 text-right">
-                    <p class="my-md-4 header-links">
 
-                        <a href="#" key="cart" class="px-2 tr">Cart</a>
-                        |
-                        <a href="#" key="account" class="px-1 tr">Create An Account</a>
+
+               
 
                     </p>
                 </div>
+                <div class="col-md-4 col-12 text-center imgdiv">
+
+                    <img src="teama.jpeg" alt="logo">
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-        
-                <nav class="nav nav-pills flex-column flex-sm-row">
-                    <a class=" flex-sm-fill text-sm-center nav-link tr" key="home" href="Home.html">HOME</a>
-                    <a class=" flex-sm-fill text-sm-center nav-link tr" key="collections" href="Collection.html">COLLECTIONS</a>
-                    <a class=" flex-sm-fill text-sm-center nav-link tr" key="sales" href="Sales.html">SALES</a>
-                    <a class=" flex-sm-fill text-sm-center nav-link tr" key="your_account" href="Account.html">YOUR ACCOUNT</a>
-                  </nav>
-              
+        <div class="container-fluid navig">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="home" href="index.html">HOME</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="collections"
+                    href="Collection.html">COLLECTIONS</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="sales" href="Sales.html">SALES</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="your_account" href="Account.php">ACCOUNT</a>
+            </nav>
+
         </div>
     </header>
     <main>
