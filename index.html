@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teama Store</title>
+    <!---page icon--->
+    <link rel="shourtcut icon" href="icon.png">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--font awsome-->
+    <script src="https://kit.fontawesome.com/a4bb5398ea.js" crossorigin="anonymous"></script>
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <!--Home.js-->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-------------------------------------Navigation-------------------------------------->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-12 text-right icons">
+                    <p class="my-md-4 header-links">
+                    <div class="right icon">
+                        <a href="cart.html"><i class="fas fa-shopping-bag fa-lg"></i></a>
+                    </div>
+
+                    <div class="dropdown middle icon">
+                        <a class="globe" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-globe fa-lg"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item lang" id="en" type="button">English</button>
+                            <button class="dropdown-item lang" id="ar" type="button">العربية</button>
+
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="dropdown left icon">
+                        <a class="btn " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><i class="fas fa-dollar-sign fa-lg"></i>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item"><img src="oman.png" style="width:30px;height:30px;"
+                                    alt="om"> OMR</a>
+                            <a href="#" class="dropdown-item"><img src="saudi-arabia.png"
+                                    style="width:30px;height:30px;" alt="sar"> SAR</a>
+                            <a href="#" class="dropdown-item"><img src="bahrain.png" style="width:30px;height:30px;"
+                                    alt="bh"> BHD</a>
+                            <a href="#" class="dropdown-item"><img src="flag.png" style="width:30px;height:30px;"
+                                    alt="ae"> AED</a>
+                            <a href="#" class="dropdown-item"><img src="qatar.png" style="width:30px;height:30px;"
+                                    alt="qa"> QAR</a>
+                            <a href="#" class="dropdown-item"><img src="kuwait.png" style="width:30px;height:30px;"
+                                    alt="kw"> KWD</a>
+
+                        </div>
+                    </div>-->
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 text-center imgdiv">
+
+                    <img src="teama.jpeg" alt="logo" id="collimg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navig">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="home" href="index.html">HOME</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="collections"
+                    href="Collection.html">COLLECTIONS</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="sales" href="Sales.html">SALES</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="your_account" href="Account.php">ACCOUNT</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <!-------------------------------------Collection page------------------------------>
+        <div class="colc">
+            <img src="backg.png" alt="" id="colc">
+            <a href="Collection.html" class="expbtn">Explore Now &#8594; </a>
+        </div>
+        <!-------------------------------------Products-------------------------------------->
+        <div class="small-container">
+            <h2 class="productsname"> Products | المنتجات</h2>
+            <ul class="ulinlineblock">
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/g1.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM B-->
+                <li class="item b">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/g2.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM C-->
+                <li class="item c">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/g3.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/r1.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/r2.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/r3.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w1.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w2.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w3.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w4.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w5.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/w6.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/y1.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/y2.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/y3.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!--ITEM A-->
+                <li class="item a">
+                    <!--box-slider--------------->
+                    <div class="box">
+                        <!--img-box---------->
+                        <div class="slide-img">
+                            <img alt="1" src="pics/y4.png">
+                            <!--overlayer---------->
+                            <div class="overlay">
+                                <!--buy-btn------>
+                                <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                        <!--detail-box--------->
+                        <div class="detail-box">
+                            <!--type-------->
+                            <div class="type">
+                                <a href="#">Rabbed Cardigan</a>
+                                <span>New Arrival</span>
+                            </div>
+                            <!--price-------->
+                            <a href="#" class="price">$23</a>
+
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+    <script type="text/javascript" src="jquery.min.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        var langKey = new Array();
+        langKey['en'] = new Array();
+        langKey['ar'] = new Array();
+
+        langKey['en']['home'] = 'HOME';
+        langKey['en']['lang'] = 'Language';
+        langKey['en']['collections'] = 'COLLECTIONS';
+        langKey['en']['sales'] = 'SALES';
+        langKey['en']['your_account'] = 'YOUR ACCOUNT';
+        langKey['en']['cart'] = 'Cart';
+        langKey['en']['account'] = 'Create An Account';
+
+        langKey['ar']['home'] = 'الرئيسية';
+        langKey['ar']['lang'] = 'اللغة';
+        langKey['ar']['collections'] = 'الفئات';
+        langKey['ar']['sales'] = 'تنزيلات';
+        langKey['ar']['your_account'] = 'حسابي';
+        langKey['ar']['cart'] = 'حقيبة التسوق';
+        langKey['ar']['account'] = 'سجل الدخول';
+
+        $(document).ready(function () {
+
+            $('.lang').click(function () {
+
+                var lang = $(this).attr('id');
+
+                $('.tr').each(function (i) {
+                    $(this).text(langKey[lang][$(this).attr('key')]);
+                });
+
+            });
+
+        });
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('nav')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+    </script>
+
+</body>
+
+</html>
