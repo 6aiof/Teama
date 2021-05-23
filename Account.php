@@ -210,7 +210,7 @@
         langKey['en']['home'] = 'HOME';
         langKey['en']['collections'] = 'COLLECTIONS';
         langKey['en']['sales'] = 'SALES';
-        langKey['en']['your_account'] = 'YOUR ACCOUNT';
+        langKey['en']['your_account'] = 'ACCOUNT';
         langKey['en']['cart'] = 'Cart';
         langKey['en']['account'] = 'Create An Account';
         langKey['en']['signin'] = 'Sign In';

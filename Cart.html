@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teama Store</title>
+    <!---page icon--->
+    <link rel="shourtcut icon" href="pics/icon.png">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--font awsome-->
+    <script src="https://kit.fontawesome.com/a4bb5398ea.js" crossorigin="anonymous"></script>
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <!--Home.js-->
+    <script src="cart.js" async></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-------------------------------------Navigation-------------------------------------->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-12 text-right icons">
+                    <p class="my-md-4 header-links">
+
+                    <div class="dropdown middle icon">
+                        <a class="globe" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-globe fa-lg"></i>
+                        </a>
+                    </div>
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 text-center imgdiv">
+
+                    <img src="teama.jpeg" alt="logo" id="collimg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navig">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="home" href="index.html">HOME</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="collections"
+                    href="Collection.html">COLLECTIONS</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="sales" href="Sales.html">SALES</a>
+                <a class=" flex-sm-fill text-sm-center nav-link tr" key="your_account" href="Account.php">ACCOUNT</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="mycart">
+            <h2>MY BAG</h2>
+            <a href="index.html">Continue shopping</a>
+
+            <div class="desc"></div>
+            <div class="qunt"></div>
+            <div class="price"></div>
+            <ul></ul>
+            <div class="total">
+                <p>TOTAL :</p>
+            </div>
+            
+        </div>
+        <div class="ordersum">
+
+        </div>
+    </main>
